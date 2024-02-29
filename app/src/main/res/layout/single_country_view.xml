@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/country_item_rl">
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/country_flag"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Official Name"
+        android:textSize="15dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/official_name_text"
+        android:layout_toRightOf="@+id/country_flag"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:id="@+id/country_name"
+        android:layout_toRightOf="@id/country_flag"
+        android:layout_below="@id/official_name_text"/>
+</RelativeLayout>
